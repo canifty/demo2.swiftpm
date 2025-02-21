@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "demo2",
+    name: "BinIt",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "demo2",
+            name: "BinIt",
             targets: ["AppModule"],
             bundleIdentifier: "com.candindar.demo2",
             teamIdentifier: "J2Y9Q88D3V",
@@ -40,5 +40,5 @@ let package = Package(
             path: "."
         )
     ],
-    swiftLanguageVersions: [.v6]
+    swiftLanguageVersions: [.version("6")]
 )
