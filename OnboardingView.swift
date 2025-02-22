@@ -8,7 +8,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @Binding var showOnboarding: Bool
-    @Binding var isPaused: Bool // New binding to control game pause state
+    @Binding var isPaused: Bool
     @State private var currentPage = 0
     private let totalPages = 3
 
@@ -58,7 +58,7 @@ struct OnboardingView: View {
                     )
                     .tag(2)
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)) // Completely hide the indicator
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .animation(.easeInOut, value: currentPage)
 
                 if currentPage == totalPages - 1 {
@@ -125,7 +125,7 @@ struct PageView: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white.opacity(0.9)) // Slight transparency
+                .fill(Color.white.opacity(0.9)) 
                 .shadow(radius: 5)
         )
         .padding()

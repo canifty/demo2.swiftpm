@@ -286,7 +286,6 @@ struct ContentView: View {
     func togglePause() {
         isPaused.toggle()
     }
-    
 }
 
 #Preview {
